@@ -1,0 +1,32 @@
+flowchart TD
+    A[Execução da atividade] --> B[Lançamento primário pelo executante]
+    B --> C{Gate 0 - dados essenciais OK?}
+    C -- Não --> B1[Correção imediata pelo executante]
+    B1 --> B
+    C -- Sim --> D[Consolidação da base]
+    D --> E[Triagem automática ou semiautomática]
+    E --> F{Decisão do modelo}
+
+    F -- APROVAR_SEM_ACAO --> G[Disponível para aprovação]
+    F -- CORRIGIR_E_LIBERAR --> H[Ajuste formal registrado]
+    H --> G
+    F -- DEVOLVER_PARA_CORRECAO --> I[Pendente - retorno ao executante]
+    F -- REVISAR_HUMANAMENTE --> J[Pendente - fila de revisão]
+
+    I --> K[Correção pelo executante]
+    K --> D
+
+    J --> L{Decisão do revisor}
+    L -- Aprovar --> G
+    L -- Corrigir e aprovar --> M[Correção técnica registrada]
+    M --> G
+    L -- Devolver --> I
+
+    G --> N{Gate gerencial adotado?}
+    N -- Sim --> O[Aprovação final]
+    O --> P[Disponível para financeiro]
+    N -- Não --> P
+
+    P --> Q{Gate pré-financeiro}
+    Q -- OK --> R[Lançada no financeiro]
+    Q -- Divergência --> J

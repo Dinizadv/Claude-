@@ -4,10 +4,34 @@ This file provides context and conventions for AI assistants (Claude Code and ot
 
 ## Repository Status
 
-This is a newly initialized repository. No source code, configuration, or project structure has been established yet.
+Repositório de trabalho do projeto **Legal One** (Andersen Ballão Advocacia,
+Departamento Tributário). Cobre a gestão de horas no Legal One/Novajus em duas
+camadas complementares:
 
-- **Remote**: `dinizadv/claude-` on GitHub
-- **Primary development branch**: `claude/add-claude-documentation-qvNbq`
+- **`docs/kit_v2/`** — espelho em Markdown do Kit Documental v2.0
+  (`KIT-LEGALONE-2026-V2`, data-base 12/04/2026): POP, PB01–PB09, README de
+  carregamento, fluxograma. PDFs originais versionados ao lado dos `.md`.
+  Conteúdo marcado como **uso interno restrito** — manter este repositório
+  privado.
+- **`legalone_robot_v1/`** — robô determinístico Python/Selenium para a
+  **Fase 1 (lançamento primário)** do POP. Lê planilha XLSX, valida e dispara
+  navegação assistida no Legal One.
+
+- **Remote**: `dinizadv/claude-` on GitHub (privado)
+- **Primary development branch**: `claude/analyze-legal-one-project-VR7f0`
+
+### Como usar o Kit como contexto
+
+Combinações mínimas por tipo de tarefa estão em
+`docs/kit_v2/04_Contexto_Referencia/README_Carregamento_de_Contexto_LegalOne_v2_0.md`.
+Resumo:
+
+| Tarefa | Leitura mínima |
+|---|---|
+| Reconstrução linha a linha | PB01 + PB02 + PB03 + PB04 + PB05 |
+| Triagem, aprovação e devolução | POP + PB02 + PB03 + PB04 + PB05 + PB06 |
+| Auditoria mensal | POP + PB06 + PB07 + PB09 |
+| Rollout | POP + PB06 + PB08 |
 
 ---
 
