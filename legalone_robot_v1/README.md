@@ -34,11 +34,21 @@ pip install -r requirements.txt
 
 ### 2) Preparar configuração
 Copie `examples/config.example.json` para `config.local.json` e preencha:
-- usuário
-- senha
 - URL base do Legal One
-- URL da tela de nova hora trabalhada, se já conhecida
+- URL de login e da tela de nova hora trabalhada, se já conhecidas
 - modo headless ou não
+- timeouts (`wait_form_seconds`, `wait_after_save_seconds`)
+
+**Credenciais não vão no JSON.** Forneça via variáveis de ambiente:
+
+```bash
+export LEGALONE_USUARIO="seu.usuario"
+export LEGALONE_SENHA="sua.senha"
+```
+
+As variáveis têm precedência sobre o que estiver no JSON. O `.gitignore`
+bloqueia `config.local.json` e `selectors.local.json` para evitar commit
+acidental de segredos.
 
 ### 3) Ajustar seletores
 Copie `examples/selectors.example.json` para `selectors.local.json` e ajuste os campos:

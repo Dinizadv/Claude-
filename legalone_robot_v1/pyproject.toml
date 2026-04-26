@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "legalone_robot"
+version = "0.1.0"
+description = "Robô determinístico para lançamento de horas no Legal One"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "selenium>=4.20,<5",
+    "openpyxl>=3.1,<4",
+    "python-dateutil>=2.9,<3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8,<9",
+]
+
+[project.scripts]
+legalone-robot = "legalone_robot.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
