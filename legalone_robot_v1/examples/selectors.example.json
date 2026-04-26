@@ -1,0 +1,94 @@
+{
+  "login": {
+    "username": {
+      "by": "id",
+      "value": "UserName"
+    },
+    "password": {
+      "by": "id",
+      "value": "Password"
+    },
+    "submit": {
+      "by": "css",
+      "value": "button[type='submit']"
+    }
+  },
+  "new_time_entry": {
+    "form_anchor": {
+      "by": "css",
+      "value": "form"
+    },
+    "executante": {
+      "by": "id",
+      "value": "ExecutanteId"
+    },
+    "data_inicio": {
+      "by": "id",
+      "value": "DataInicio"
+    },
+    "hora_inicio": {
+      "by": "id",
+      "value": "HoraInicio"
+    },
+    "duracao": {
+      "by": "id",
+      "value": "Duracao"
+    },
+    "cliente_principal": {
+      "by": "id",
+      "value": "ClientePrincipal"
+    },
+    "negociacao": {
+      "by": "id",
+      "value": "Negociacao"
+    },
+    "descricao_negociacao": {
+      "by": "id",
+      "value": "DescricaoNegociacao"
+    },
+    "pasta": {
+      "by": "id",
+      "value": "Pasta"
+    },
+    "nome_pasta": {
+      "by": "id",
+      "value": "NomePasta"
+    },
+    "tipo_subtipo": {
+      "by": "id",
+      "value": "TipoSubtipo"
+    },
+    "descricao": {
+      "by": "id",
+      "value": "Descricao"
+    },
+    "cobravel": {
+      "by": "id",
+      "value": "Cobravel"
+    },
+    "observacoes_executante": {
+      "by": "id",
+      "value": "ObsExecutante"
+    },
+    "gerente_conta": {
+      "by": "id",
+      "value": "GerenteConta"
+    },
+    "grupo": {
+      "by": "id",
+      "value": "Grupo"
+    },
+    "save_button": {
+      "by": "css",
+      "value": "button[type='submit']"
+    },
+    "success_id": {
+      "by": "css",
+      "value": "[data-role='timesheet-id']"
+    },
+    "error_box": {
+      "by": "css",
+      "value": ".validation-summary-errors, .alert-danger"
+    }
+  }
+}
