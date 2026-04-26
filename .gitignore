@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Local config & secrets — never commit
+**/config.local.json
+**/selectors.local.json
+.env
+.env.*
+
+# Runtime artefacts
+**/logs/
+**/screenshots/
+**/downloads/
+*.log
+*_resultado.xlsx
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test/coverage
+.pytest_cache/
+.coverage
+htmlcov/

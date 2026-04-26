@@ -1,0 +1,14 @@
+{
+  "base_url": "https://SEU_DOMINIO.novajus.com.br",
+  "login_url": "https://SEU_DOMINIO.novajus.com.br/Account/Login",
+  "new_time_entry_url": "https://SEU_DOMINIO.novajus.com.br/TimeSheet/HorasTrabalhadas/CreateHoraTrabalhadaLote",
+  "headless": false,
+  "implicit_wait_seconds": 3,
+  "page_load_timeout_seconds": 30,
+  "wait_form_seconds": 10,
+  "wait_after_save_seconds": 15,
+  "download_dir": "./downloads",
+  "screenshots_dir": "./screenshots",
+  "logs_dir": "./logs",
+  "default_hora_inicio": "00:00"
+}
